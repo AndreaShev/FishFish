@@ -38,11 +38,45 @@ text-transform: uppercase;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
-	gap: 0.3rem;
+	gap: 10px;
 }
-
+.landing-page .landing-page-nav .navbar-nav .navbar-registration__list{
+padding: 0;
+margin-right: 10px;
+}
+.navbar-registration__link{
+color: #FFF;
+font-size: 1rem;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+padding: 11px 29px;
+border-radius: 50px;
+border: 1px solid #4C87AA;
+}
+.navbar-language__img{
+	margin-top: -6px;
+}
+.landing-page .landing-page-nav .navbar-logo .white {
+	margin-top: -3px;
+}
 /*  header */
 
+/*  -------  */
+.landing-page .owl-item .card {
+box-shadow: none;
+}
+.card__top{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.landing-page .owl-carousel .owl-item img{
+	width: 200px;
+	height: 200px;
+	/* text-align: center; */
+}
+/*  -------  */
 
 .landing-page .home-row {
 	padding-top: 163px;
@@ -399,11 +433,11 @@ color: #FFF;
 font-size: 20px;
 font-weight: 500;
 cursor: pointer;
-padding-left: 28px;
+padding-left: 36px;
 position: relative;
 }
 .landing-page .contacts__item-tel{
-	padding-left: 58px;	
+	padding-left: 69px;	
 }
 .landing-page .contacts__item-tel:before{
 	content: "";
@@ -448,4 +482,8 @@ text-decoration-line: underline;
 }
 .footer__link:active, .footer__link:hover {
     color: #FFF;
+}
+
+.landing-page .section.footer{
+	background-color: inherit;
 }

@@ -38,7 +38,27 @@ text-transform: uppercase;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
-	gap: 0.3rem;
+	gap: 10px;
+}
+.landing-page .landing-page-nav .navbar-nav .navbar-registration__list{
+padding: 0;
+margin-right: 10px;
+}
+.navbar-registration__link{
+color: #FFF;
+font-size: 1rem;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+padding: 11px 29px;
+border-radius: 50px;
+border: 1px solid #4C87AA;
+}
+.navbar-language__img{
+	margin-top: -6px;
+}
+.landing-page .landing-page-nav .navbar-logo .white {
+	margin-top: -3px;
 }
 
 /*  header */
@@ -59,16 +79,25 @@ line-height: 110%;
 	} 
 
 	.form-control{
-		border-radius: 50px;
+		min-height: 50px;
+border-radius: 50px;
 border: 1px solid #4C87AA;
 	}
-	.has-top-label > span:last-of-type, .has-top-label label{
-padding: 8px 0px 32px 8px;
-	}
-
-.form-control span{
-font-size: 12px;
-	}
+	.has-top-label > span:last-of-type, .has-top-label label {
+		position: absolute;
+		cursor: text;
+		font-size: 76%;
+		opacity: 1;
+		top: 0.5rem;
+		left: 1.5rem;
+		z-index: 3;
+		line-height: 1;
+		padding: 0 1px;
+		font-weight: 600;
+  }
+  .form-group.has-top-label .bootstrap-tagsinput, .form-group.has-top-label .form-control{
+	padding: 12px 0px 0px 25px;
+  }
 	.form-group {
 		margin-bottom: 1.25rem;
   }
@@ -129,7 +158,22 @@ line-height: 130%;
 	grid-column: 1 / span 2; 
  }
 
- .landing-page .section.subpage-long{
-	background: url(../../images/site/registration-background-blue.png);
-	background-size: cover;
+
+
+ /*  -------  */
+ .landing-page .section.home {
+	background: none;
+	/* background-position-x: initial;
+	min-width: 100vw;
+	min-height: 100vh; */
  }
+ .content-container{
+	background: linear-gradient(to right, #002646 0%, #002646 6.46%, #003A62 17.43%, #016DA9 40.67%, #0193DE 56.81%, #0193DE 100%);
+ }
+ @media (max-width: 991.98px) {
+ .row.registration {
+flex-direction: column-reverse;
+row-gap: 40px;
+ }
+}
+ /*  -------  */
