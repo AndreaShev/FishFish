@@ -218,22 +218,57 @@
 					  <a class="btn btn-outline-semi-light btn-xl home-button" href="register.html">ПОПРОБОВАТЬ</a>
 					</div>
 				 </div>
-				 
-				 <!-- <div class="questions">
+				</div>
+
+
+				 <div class="row questions">
+					<div class="questions__wrapper col-12">
 					<h2 class="questions__title">Популярные вопросы</h2>
-				 <div class="spoiler">
-				 <h3 class="spoiler-title">
-					Как вообще пользоваться данной программой? Куда нажать, чтоб всё заработало?
-					<img class="arrow" src="/images/site/icon-arrow.svg" alt="Стрелка">
-				 </h3>
-				 <div class="spoiler-content">
-					<p>Ответ на вопрос: Не следует, однако забывать, что консультация с широким активом представляет собой интересный эксперимент проверки систем массового участия. Равным образом консультация с широким активом требуют определения и уточнения направлений прогрессивного развития. </p>
-				 </div>
-			  </div>
-			</div> -->
+					<div class="questions-spoiler spoiler">
+						<div class="spoiler-header">
+							<p>Как вообще пользоваться данной программой? Куда нажать, чтоб всё заработало?</p>
+						  <img class="arrow-icon" src="images/site/icon-arrow.svg" alt="Стрелка">
+						  
+						</div>
+						<div class="spoiler-content">
+						  <p>Ответ на вопрос: Не следует, однако забывать, что консультация с широким активом представляет собой интересный эксперимент проверки систем массового участия. Равным образом консультация с широким активом требуют определения и уточнения направлений прогрессивного развития. </p></p>
+						</div>
+					 </div>
+					 <div class="questions-spoiler spoiler">
+						<div class="spoiler-header">
+							<p>Как установить программу? Где взять установочный файл?</p>
+						  <img class="arrow-icon" src="images/site/icon-arrow.svg" alt="Стрелка">
+						  
+						</div>
+						<div class="spoiler-content">
+						  <p>Ответ на вопрос: Не следует, однако забывать, что консультация с широким активом представляет собой интересный эксперимент проверки систем массового участия. Равным образом консультация с широким активом требуют определения и уточнения направлений прогрессивного развития. </p></p>
+						</div>
+					 </div>
+					 <div class="questions-spoiler spoiler">
+						<div class="spoiler-header">
+							<p>А что если у меня возникнут трудности или вопросы, куда обращаться?</p>
+						  <img class="arrow-icon" src="images/site/icon-arrow.svg" alt="Стрелка">
+						  
+						</div>
+						<div class="spoiler-content">
+						  <p>Ответ на вопрос: Не следует, однако забывать, что консультация с широким активом представляет собой интересный эксперимент проверки систем массового участия. Равным образом консультация с широким активом требуют определения и уточнения направлений прогрессивного развития. </p></p>
+						</div>
+					 </div>
+					 <div class="questions-spoiler spoiler">
+						<div class="spoiler-header">
+							<p>Как продлить подписку или сменить тариф?</p>
+						  <img class="arrow-icon" src="images/site/icon-arrow.svg" alt="Стрелка">
+						  
+						</div>
+						<div class="spoiler-content">
+						  <p>Ответ на вопрос: Не следует, однако забывать, что консультация с широким активом представляет собой интересный эксперимент проверки систем массового участия. Равным образом консультация с широким активом требуют определения и уточнения направлений прогрессивного развития. </p></p>
+						</div>
+					 </div>
+					  </div>
+			</div>
+			
 
-
-			  </div>
+			  
      
 			</div>
  
@@ -243,7 +278,7 @@
 	
   </div> 
 
-    <div class="section footer mb-0" style="background-position-x: -110px;">
+    <div class="section footer mb-0 teaching" style="background-position-x: -110px;">
       <div class="container">
         <div class="row footer-row">
           <div class="footer-content">
@@ -277,10 +312,22 @@
 
   </div>
 </div>
-
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+	let spoilers = document.querySelectorAll(".spoiler");
+ 
+	spoilers.forEach(function(spoiler) {
+		let header = spoiler.querySelector(".spoiler-header");
+	  header.addEventListener("click", function() {
+		 spoiler.classList.toggle("open");
+		 let content = spoiler.querySelector(".spoiler-content");
+		 content.style.display = content.style.display === "none" ? "block" : "none";
+	  });
+	});
+ });
+ </script>
 <script src="js/site/manifest.js?id=7db827d654313dce4250"></script>
 <script src="js/site/vendor.js?id=ff0a81dcd4cb55fb35b4"></script>
 <script src="js/site/site.js?id=457be84021daf80c4615"></script>
-<script src="js/site/teaching.js></script>
 </body>
 </html>
