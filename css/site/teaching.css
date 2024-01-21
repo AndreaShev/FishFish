@@ -455,7 +455,7 @@ text-decoration-line: underline;
 		.landing-page .section.home.home-teaching {
 			max-height: 1220px;
 			min-height: inherit;
-			margin-bottom: 200px;
+			margin-bottom: 300px;
 		} 
 	}
 	@media (min-width: 1200px){
