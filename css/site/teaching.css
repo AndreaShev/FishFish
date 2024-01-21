@@ -131,9 +131,11 @@ margin-bottom: 51px;
 	grid-template-columns: 303px 449px 290px 61px;
 	grid-template-rows: auto 1fr auto;
 		border-radius: 50px;
-/* border: 1px solid #DEE2E6; */
+border: 1px solid #DEE2E6;
 background: #FFF;
+box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 5%);
 overflow: hidden;
+
 }
 @media (max-width: 1200px){
 	.training-materials__container {	
@@ -444,3 +446,21 @@ text-decoration-line: underline;
 		width: 50%;
 	}
 	}
+
+	.training-materials__header.training-materials__header-4, .training-materials__content.training-materials__content-4, .training-materials__footer.training-materials__footer-4{
+		border-right: none;
+	}
+
+	@media (min-width: 1000px){
+		.landing-page .section.home.home-teaching {
+			max-height: 1220px;
+			min-height: inherit;
+			margin-bottom: 200px;
+		} 
+	}
+	@media (min-width: 1200px){
+	.landing-page .section.home.home-teaching {
+		max-height: 1150px;
+
+	} 
+}
