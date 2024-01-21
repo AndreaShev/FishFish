@@ -125,7 +125,7 @@ line-height: 110%; /* 52.8px */
 margin-bottom: 51px;
 }
 
-
+/* 
 .training-materials__container {
 	display: grid;
 	grid-template-columns: 303px 449px 290px 61px;
@@ -158,7 +158,7 @@ overflow: hidden;
   color: #465156;
 font-size: 18px;
 font-weight: 700;
-line-height: 110%; /* 19.8px */
+line-height: 110%; 
 }
 @media (max-width: 1200px){
 	.training-materials__header{
@@ -169,7 +169,7 @@ line-height: 110%; /* 19.8px */
 color: #465156;
 font-size: 16px;
 font-weight: 400;
-line-height: 110%; /* 17.6px */
+line-height: 110%; 
 }
 .training-materials__content-1, .training-materials__footer-1 {
 	padding: 28px 32px 0px 42px;	
@@ -204,7 +204,6 @@ line-height: 110%; /* 17.6px */
 @media (max-width: 768px){
 .training-materials__container-small{
 	display: grid;
-	/* gap: 10px; */
 	border-radius: 50px; 
 border: 1px solid #DEE2E6;
 background: #FFF;
@@ -220,7 +219,7 @@ background: #FFF;
 	.training-materials__content li{
 		padding-bottom: 10px;
 	}
-}
+} */
 
 .row.bg-primary.webinar-block{
 	margin-bottom: 87px;
@@ -455,7 +454,7 @@ text-decoration-line: underline;
 		.landing-page .section.home.home-teaching {
 			max-height: 1220px;
 			min-height: inherit;
-			margin-bottom: 300px;
+			margin-bottom: 400px;
 		} 
 	}
 	@media (min-width: 1200px){
@@ -464,3 +463,152 @@ text-decoration-line: underline;
 
 	} 
 }
+
+
+/* table */
+
+.training-materials__table {
+border: 1px solid #DEE2E6;
+border-radius: 50px;
+background: #FFF;
+box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 5%);
+overflow: hidden;
+}
+.training-materials__table td {
+	text-align: left;
+	vertical-align: top;
+	border: 1px solid #DEE2E6;
+	color: #465156;
+font-size: 16px;
+font-weight: 400;
+line-height: 110%;
+ }
+ .training-materials__table th:first-child{
+	max-width: 304px;
+	max-height: 82px;
+    overflow: hidden;
+ }
+ .training-materials__table th:nth-child(2){
+	max-width: 450px;
+	max-height: 82px;
+    overflow: hidden;
+ }
+ .training-materials__table th:nth-child(3){
+	max-width: 291px;
+	max-height: 82px;
+    overflow: hidden;
+ }
+ .training-materials__table td:last-child{
+	max-width: 62px;
+	max-height: 82px;
+    overflow: hidden;
+ }
+
+ .training-materials__row .training-materials__header {
+	padding-top: 31px;
+	padding-bottom: 31px;
+	font-size: 18px;
+	font-weight: 700;
+	font-style: normal;
+	line-height: 19.8px;
+	border: 1px solid #DEE2E6;
+	color: #465156;
+ }
+ .training-materials__header-1{
+	padding-left: 42px;
+ }
+
+ .training-materials__content-1, .training-materials__footer-1{
+	padding: 28px 32px 0px 42px;
+ }
+ .training-materials__header-2{
+	padding-left: 36px;
+ }
+ .training-materials__content-2, .training-materials__footer-2{
+	padding: 28px 32px 36px 36px;
+ }
+ .training-materials__content-2 ol, .training-materials__footer-2 ol {
+	padding-left: 0px;
+}
+.training-materials__header-3, .training-materials__content-3, .training-materials__footer-3 {
+	padding-left: 36px;
+	padding-right: 50px;
+ }
+ .training-materials__content-3, .training-materials__footer-3{
+	padding-top: 28px;
+ }
+ 
+ .training-materials__header-4, .training-materials__content-4, .training-materials__footer-4{
+	padding-left: 15px;
+	padding-right: 15px;
+ }
+ .training-materials__content-4, .training-materials__footer-4{
+	padding-top: 28px;
+	text-align: center;
+ }
+
+@media (max-width: 768px)  {
+	table.training-materials__table {
+	  width: auto;
+	  margin: 0 auto;
+	}
+	table.training-materials__table thead {
+	  display: none;
+	}
+	table.training-materials__table tr {
+	  display: block;
+	  
+	  border-bottom: 1px solid #e8e9eb;
+	}
+	table.training-materials__table tr:last-child {
+		border:none;
+	 }
+	table.training-materials__table td {
+	  display: block;
+	  text-align: left;
+	  position: relative;
+	  
+	  border: none;
+	  padding: 40px 30px 30px 40px;
+	}
+	table.training-materials__table td:before {
+	  content: attr(aria-label);
+	  position: absolute;
+	  left: 8%;
+	  top: 3px;
+	  
+	  color: #465156;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%;
+	}
+	.training-materials__table td:last-child {
+		max-width: none;
+ }
+ .training-materials__row {
+	margin: 30px 0px 0px 0px;
+ }
+}
+
+
+
+
+
+
+
+	/* .training-materials__table {
+	  display: block;
+	  width: 100%;
+	  overflow-x: auto;
+	}
+
+	.training-materials__table tr {
+	  display: block;
+	  margin-bottom: 10px;
+	}
+
+	.training-materials__table td {
+	  display: block;
+	} 
+ } */
