@@ -505,3 +505,22 @@ text-decoration-line: underline;
 		width: 50%;
 	}
 	}
+
+	.full-width {
+		width: 100vw;
+		position: relative;
+		left: 50%;
+		right: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+	 }
+	
+	 .webinar-block__title{
+		padding-bottom: 0px;
+	 }
+	 .webinar-block::after {
+		filter: brightness(1.1);
+	 }
+	 .webinar-block {
+		padding: 56px 0px 72px 0px;
+	 }
