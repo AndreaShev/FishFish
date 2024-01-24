@@ -168,7 +168,8 @@ line-height: 130%;
 	min-height: 100vh; */
  }
  .content-container{
-	background: linear-gradient(to right, #002646 0%, #002646 6.46%, #003A62 17.43%, #016DA9 40.67%, #0193DE 56.81%, #0193DE 100%);
+	background: linear-gradient(138deg, #002646 0%, #002646 6.46%, #003A62 17.43%, #016DA9 40.67%, #0193DE 56.81%, #0193DE 64.56%);
+	/* background: linear-gradient(to right, #002646 0%, #002646 6.46%, #003A62 17.43%, #016DA9 40.67%, #0193DE 56.81%, #0193DE 100%); */
  }
  @media (max-width: 991.98px) {
  .row.registration {
@@ -181,3 +182,8 @@ row-gap: 40px;
 	padding-bottom: 200px;
 }
  /*  -------  */
+ @media (min-width: 991.98px){
+ .start_container{
+max-width: none;
+ }
+}
